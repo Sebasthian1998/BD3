@@ -1,16 +1,13 @@
 <style>
-  body{
+  .navigation .navbar *{
     background-color: darkblue !important;
+    color: greenyellow !important;
   }
 </style>
 
 <div class="navigation col-lg-12 bg-dark">
   <nav class="navbar">
     <div class="container-fluid">
-      
-      <div class="navbar-header">
-        <a href="#" class="navbar-brand">{{title}}</a>
-      </div>
 
       <ul class="nav navbar-nav" *ngIf="identity">
         <li> 
@@ -24,13 +21,6 @@
           <a [routerLink]="['/timeline']" [routerLinkActive]="['active']">
             <span class="glyphicon glyphicon-th-list"></span>
             Publicaciones
-          </a>
-        </li>
-
-        <li> 
-          <a [routerLink]="['/gente']" [routerLinkActive]="['active']">
-            <span class="glyphicon glyphicon-user"></span>
-            Usuarios
           </a>
         </li>
 
